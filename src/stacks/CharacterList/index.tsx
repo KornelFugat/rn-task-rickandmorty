@@ -11,11 +11,12 @@ export const CharacterListStack = () => {
     <Stack.Navigator>
       <Stack.Screen
         name={CharacterListStackRoutes.CharacterListScreen}
-        children={CharacterListScreen}
+        component={CharacterListScreen}
+        options={{headerShown: false}}
       />
       <Stack.Screen
         name={CharacterListStackRoutes.CharacterDetailsStack}
-        children={CharacterDetailsStack}
+        component={CharacterDetailsStack}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
